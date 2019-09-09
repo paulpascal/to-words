@@ -1,7 +1,7 @@
 {
-  "name": "num_to_words",
+  "name": "with_decimal",
   "version": "1.0.4",
-  "description": "Converts Numbers (including decimal points) into words.",
+  "description": ".",
   "main": "index.js",
   "scripts": {
     "transpile": "babel src -d lib",
@@ -9,8 +9,6 @@
     "lint-fix": "eslint . --fix"
   },
   "keywords": [
-    "to words",
-    "number to words"
   ],
   "author": "ConqL.",
   "license": "MIT",
