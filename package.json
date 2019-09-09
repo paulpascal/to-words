@@ -1,5 +1,5 @@
 {
-  "name": "to-words",
+  "name": "num_to_words",
   "version": "1.0.4",
   "description": "Converts Numbers (including decimal points) into words.",
   "main": "index.js",
