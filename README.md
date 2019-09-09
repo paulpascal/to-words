@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Converts Numbers (including decimal points) into words for Indian style. It also converts the numbers into words for currency, again, for Indian style.
+Converts Numbers (including decimal points) into words . It also converts the numbers into words for currency.
 
 ## Installation
 
@@ -30,11 +30,7 @@ To convert to currency
 
 ```js
 let toWords = require('to-words');
-let words = toWords(452, {currency: true}); // words = Four Hundred Fifty Two Rupee Only
+let words = toWords(452, {currency: true, label: 'EUR'}); // words = Four Hundred Fifty Two EUR Only
 
-words = toWords(452.36, {currency: true}); // words = Four Hundred Fifty Two Rupee And Thirty Six Paise Only
+words = toWords(452.36, {currency: true, label: 'EUR'}); // words = Four Hundred Fifty Two EUR And Thirty Six Only
 ```
-
-
-## Inspiration
-[https://stackoverflow.com/a/46221860](https://stackoverflow.com/a/46221860)
