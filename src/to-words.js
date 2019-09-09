@@ -3,8 +3,9 @@
 class ToWords {
   constructor() {
     this.numberWords = [
-      {number: 10000000, value: 'Crore'},
-      {number: 100000, value: 'Lakh'},
+      {number: 100000000, value: 'One Billion'},
+      {number: 10000000, value: 'One Million'},
+      {number: 100000, value: 'One Hundred Thousand'},
       {number: 1000, value: 'Thousand'},
       {number: 100, value: 'Hundred'},
       {number: 90, value: 'Ninety'},
@@ -39,19 +40,23 @@ class ToWords {
 
   convert(number, options = {}) {
     options.currency = (options.currency === true);
+    options.currencyLabel = options.currencyLabel;
 
     let ns = number + '';
     if (ns.includes('.')) {
       if ((ns.match(/\./g) || []).length >= 2) {
         throw new Error('Invalid Number `' + number + '`');
       }
+      if (!options.currencyLabel) {
+        throw new Error('Invalid option, currencyLabel is required');
+      }
       let split = (number + '').split('.');
       return this.convertInternal(split[0], options)
-        + (options.currency ? ' Rupee And ' : ' Point ')
+        + (options.currency ? ` ${options.currencyLabel} And ` : ' Point ')
         + this.convertInternal(split[1], options)
-        + (options.currency ? ' Paise Only' : '');
+        + (options.currency ? ' Only' : '');
     }
-    return this.convertInternal(number, options) + (options.currency ? ' Rupee Only' : '');
+    return this.convertInternal(number, options) + (options.currency ? ` ${options.currencyLabel} Only` : '');
   }
 
   convertInternal(number, options = {}) {
