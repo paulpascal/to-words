@@ -3,9 +3,9 @@
 class ToWords {
   constructor() {
     this.numberWords = [
-      {number: 100000000, value: 'One Billion'},
-      {number: 10000000, value: 'One Million'},
-      {number: 100000, value: 'One Hundred Thousand'},
+      {number: 10000000, value: 'Billion'},
+      {number: 1000000, value: 'Million'},
+      {number: 100000, value: 'Hundred Thousand'},
       {number: 1000, value: 'Thousand'},
       {number: 100, value: 'Hundred'},
       {number: 90, value: 'Ninety'},
