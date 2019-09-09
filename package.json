@@ -1,7 +1,7 @@
 {
   "name": "to-words",
-  "version": "1.0.3",
-  "description": "Converts Numbers (including decimal points) into words for Indian style.",
+  "version": "1.0.4",
+  "description": "Converts Numbers (including decimal points) into words.",
   "main": "index.js",
   "scripts": {
     "transpile": "babel src -d lib",
@@ -10,11 +10,9 @@
   },
   "keywords": [
     "to words",
-    "number to words",
-    "Indian style number to words",
-    "Indian style number to words currency"
+    "number to words"
   ],
-  "author": "Munjal Dhamecha",
+  "author": "ConqL.",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
@@ -26,6 +24,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mastermunj/to-words.git"
+    "url": "https://github.com/paulpascal/to-words.git"
   }
 }
