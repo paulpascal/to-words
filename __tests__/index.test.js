@@ -1,4 +1,4 @@
-const toWords = require('../src/to-words');
+const toWords = require('../index');
 
 describe('toWords', () => {
   test(`minor test`, () => {
