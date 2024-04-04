@@ -32,5 +32,5 @@ To convert to currency
 let toWords = require('with_decimal');
 let words = toWords(452, {currency: true, label: 'EUR'}); // words = Four Hundred Fifty Two EUR Only
 
-words = toWords(452.36, {currency: true, label: 'EUR'}); // words = Four Hundred Fifty Two EUR And Thirty Six Only
+words = toWords(452.36, {currency: true, label: 'EUR'});  // words = Four Hundred Fifty Two EUR And Thirty Six Only
 ```
