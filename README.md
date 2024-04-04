@@ -16,7 +16,6 @@ OR
 yarn add with_decimal
 ```
 
-
 ## Usage
 
 ```js
