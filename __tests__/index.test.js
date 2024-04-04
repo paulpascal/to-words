@@ -7,6 +7,6 @@ describe('toWords', () => {
   });
 
   test(`EUR`, () => {
-    expect(() => toWords(452, { currency: true, label: 'EUR' }).toEqual('Four Hundred Fifty Two EUR Only'));
+    expect(() => toWords(452, {currency: true, label: 'EUR'}).toEqual('Four Hundred Fifty Two EUR Only'));
   });
 });
