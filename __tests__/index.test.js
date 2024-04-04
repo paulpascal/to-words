@@ -6,15 +6,25 @@ describe('toWords', () => {
     expect(() => toWords(123.45).toEqual('One Hundred Twenty Three Point Fourty Five'));
   });
 
-  test(`EUR`, () => {
-    expect(() => toWords(
-        452, {currency: true, label: 'EUR'}
-    ).toEqual('Four Hundred Fifty Two EUR Only'));
-  });
+  for (let i = 0; i < 30; i++) {
+    test(`EUR ${i}`, (done) => {
+      setTimeout(() => {
+        expect(() => toWords(
+            452, {currency: true, label: 'EUR'}
+        ).toEqual('Four Hundred Fifty Two EUR Only'));
+        done();
+      }, 4500);
+    });
+  }
 
-  test(`EUR`, () => {
-    expect(() => toWords(
-        452.36, {currency: true, label: 'EUR'}
-    ).toEqual('Four Hundred Fifty Two EUR And Thirty Six Only'));
-  });
+  for (let i = 0; i < 20; i++) {
+    test(`EUR ${i}`, (done) => {
+      setTimeout(() => {
+        expect(() => toWords(
+            452.36, {currency: true, label: 'EUR'}
+        ).toEqual('Four Hundred Fifty Two EUR And Thirty Six Only'));
+        done();
+      }, 4500);
+    });
+  }
 });
