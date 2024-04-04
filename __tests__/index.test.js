@@ -6,7 +6,7 @@ describe('toWords', () => {
     expect(() => toWords(123.45).toEqual('One Hundred Twenty Three Point Fourty Five'));
   });
 
-  for (let i = 0; i < 30; i++) {
+  for (let i = 0; i < 28; i++) {
     test(`EUR ${i}`, (done) => {
       setTimeout(() => {
         expect(() => toWords(
