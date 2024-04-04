@@ -1,3 +1,12 @@
+# [1.7.0](https://github.com/paulpascal/to-words/compare/v1.6.0...v1.7.0) (2024-04-04)
+
+
+### Features
+
+* add support for others currency part 14 ([d92506d](https://github.com/paulpascal/to-words/commit/d92506d446bc8327d31dcc941d19285e13cb8a57))
+* add support for others currency part 16 ([9cf2624](https://github.com/paulpascal/to-words/commit/9cf262431791a9eb06c340f3c2f03facfb915acc))
+* add support for others currency part 9 ([4e7d075](https://github.com/paulpascal/to-words/commit/4e7d075c9cad64b3a8aa1b41a23e0dd84e1b0317))
+
 # [1.6.0](https://github.com/paulpascal/to-words/compare/v1.5.0...v1.6.0) (2024-04-04)
 
 
