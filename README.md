@@ -33,3 +33,4 @@ let words = toWords(452, {currency: true, label: 'EUR'}); // words = Four Hundre
 
 words = toWords(452.36, {currency: true, label: 'EUR'});  // words = Four Hundred Fifty Two EUR And Thirty Six Only
 ```
+
