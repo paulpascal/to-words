@@ -1,3 +1,10 @@
+## [4.2.1](https://github.com/paulpascal/to-words/compare/v4.2.0...v4.2.1) (2024-04-15)
+
+
+### Bug Fixes
+
+* tag updates ([#21](https://github.com/paulpascal/to-words/issues/21)) ([ad90e6e](https://github.com/paulpascal/to-words/commit/ad90e6ee6908d0a52cc69be70f976e8f09444adc))
+
 # [1.8.0](https://github.com/paulpascal/to-words/compare/v1.7.0...v1.8.0) (2024-04-08)
 
 
